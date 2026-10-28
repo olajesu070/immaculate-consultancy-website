@@ -391,23 +391,24 @@ document.addEventListener('DOMContentLoaded', () => {
           formSubmitBtn.innerHTML = '<span>SUBMIT NOW</span>';
         }
 
-        const mailSubject = encodeURIComponent(`Legal Consultation: ${serviceVal} - ${nameVal}`);
+        const mailSubject = encodeURIComponent(`Consultation Inquiry: ${serviceVal} - ${nameVal}`);
         const mailBody = encodeURIComponent(
-          `Dear LawSight Legal Team,\n\n` +
-          `Client: ${nameVal}\n` +
+          `Dear Immaculate Consultancy Advisory Team,\n\n` +
+          `Client Name: ${nameVal}\n` +
           `Email: ${emailVal}\n` +
           `Phone: ${phoneVal}\n` +
-          `Practice Area: ${serviceVal}\n\n` +
-          `Case Details:\n${msgVal}\n\n` +
-          `Sent via LawSight Online Consultation Request`
+          `Requested Service: ${serviceVal}\n\n` +
+          `Case / Inquiry Details:\n${msgVal}\n\n` +
+          `Direct Lines: 0708 810 9367 / 0810 694 3942\n` +
+          `Sent via Immaculate Consultancy Online Portal`
         );
 
         const waText = encodeURIComponent(
-          `Hello LawSight Legal Team, my name is ${nameVal}. I would like to request a consultation regarding ${serviceVal}.\n\nDetails: ${msgVal}`
+          `Hello Immaculate Consultancy, my name is ${nameVal}. I would like to request consultation regarding *${serviceVal}*.\n\nPhone: ${phoneVal}\nEmail: ${emailVal}\nDetails: ${msgVal}`
         );
 
         const successHtml = `
-          <strong>Consultation Request Received!</strong> Thank you, ${nameVal}. Your inquiry regarding <em>${serviceVal}</em> has been logged. Our attorneys will contact you shortly.<br>
+          <strong>Consultation Request Received!</strong> Thank you, ${nameVal}. Your brief regarding <em>${serviceVal}</em> has been registered with our senior advisory desk.<br>
           <div style="margin-top: 10px;">
             <a href="https://wa.me/2347088109367?text=${waText}" target="_blank" rel="noopener noreferrer" class="alert-action-btn">
               Chat on WhatsApp &rarr;
@@ -424,6 +425,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
   }
+
+  // Preselect Service in Consultation Form
+  window.preselectService = (serviceName) => {
+    const serviceSelect = document.getElementById('formService');
+    if (serviceSelect) {
+      for (let i = 0; i < serviceSelect.options.length; i++) {
+        if (serviceSelect.options[i].value === serviceName) {
+          serviceSelect.selectedIndex = i;
+          serviceSelect.style.borderColor = 'var(--primary-gold)';
+          setTimeout(() => {
+            serviceSelect.style.borderColor = '';
+          }, 2000);
+          break;
+        }
+      }
+    }
+  };
 
   function showFormAlert(message, typeClass, isHtml = false) {
     if (!formAlert) return;
