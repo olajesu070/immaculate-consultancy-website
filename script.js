@@ -107,6 +107,101 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==========================================================================
+  // 3B. HERO SLIDER CAROUSEL (Exact 3-Slide Revolution Slider Architecture)
+  // ==========================================================================
+  const heroSlides = document.querySelectorAll('.hero-slider-section .hero-slide');
+  const heroDots = document.querySelectorAll('.hero-slider-dots .hero-slider-dot');
+  const heroPrev = document.getElementById('heroPrev');
+  const heroNext = document.getElementById('heroNext');
+  const heroSection = document.getElementById('home');
+  let currentHeroIndex = 0;
+  let heroTimer = null;
+
+  const goToHeroSlide = (idx) => {
+    if (heroSlides.length === 0) return;
+    currentHeroIndex = (idx + heroSlides.length) % heroSlides.length;
+
+    heroSlides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === currentHeroIndex);
+    });
+
+    heroDots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentHeroIndex);
+    });
+  };
+
+  const nextHeroSlide = () => goToHeroSlide(currentHeroIndex + 1);
+  const prevHeroSlide = () => goToHeroSlide(currentHeroIndex - 1);
+
+  const startHeroAutoplay = () => {
+    stopHeroAutoplay();
+    heroTimer = setInterval(nextHeroSlide, 6000);
+  };
+
+  const stopHeroAutoplay = () => {
+    if (heroTimer) {
+      clearInterval(heroTimer);
+      heroTimer = null;
+    }
+  };
+
+  const resetHeroAutoplay = () => {
+    startHeroAutoplay();
+  };
+
+  if (heroNext) {
+    heroNext.addEventListener('click', () => {
+      nextHeroSlide();
+      resetHeroAutoplay();
+    });
+  }
+
+  if (heroPrev) {
+    heroPrev.addEventListener('click', () => {
+      prevHeroSlide();
+      resetHeroAutoplay();
+    });
+  }
+
+  heroDots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      const targetSlide = parseInt(dot.getAttribute('data-slide'), 10) || 0;
+      goToHeroSlide(targetSlide);
+      resetHeroAutoplay();
+    });
+  });
+
+  if (heroSection) {
+    heroSection.addEventListener('mouseenter', stopHeroAutoplay);
+    heroSection.addEventListener('mouseleave', startHeroAutoplay);
+
+    // Touch Swipe Support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    heroSection.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    heroSection.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diffX = touchEndX - touchStartX;
+      if (Math.abs(diffX) > 45) {
+        if (diffX < 0) {
+          nextHeroSlide();
+        } else {
+          prevHeroSlide();
+        }
+        resetHeroAutoplay();
+      }
+    }, { passive: true });
+  }
+
+  // Kick off hero auto-rotation
+  startHeroAutoplay();
+
+
+  // ==========================================================================
   // 4. FUN FACT ANIMATED NUMBER COUNTERS
   // ==========================================================================
   const counterElements = document.querySelectorAll('.counter-val[data-target]');

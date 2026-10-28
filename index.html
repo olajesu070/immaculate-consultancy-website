@@ -125,39 +125,82 @@
   <main>
 
     <!-- ======================================================================
-         SECTION 1: HERO SLIDER (Exact LawSight Banner Layered Visual)
+         SECTION 1: HERO SLIDER (Exact LawSight Full-Screen 3-Slide Carousel)
          ====================================================================== -->
-    <section class="hero-slider-section" id="home">
-      <div class="hero-bg-layer"></div>
+    <section class="hero-slider-section" id="home" aria-label="LawSight Hero Carousel">
       
-      <!-- Layer 2: Lady Justice Statue Layer -->
-      <img src="https://demo.casethemes.net/lawsight/wp-content/uploads/2019/03/bg-slider1-layer2.jpg" alt="Lady Justice Statue" class="hero-layer-justice">
-
-      <!-- Layer 3: Executive Lawyer Layer -->
-      <img src="https://demo.casethemes.net/lawsight/wp-content/uploads/2019/03/bg-slider1-layer3.jpg" alt="Lawyer Layer" class="hero-layer-lawyer">
-
-      <div class="container hero-content-container">
-        <div class="hero-caption-box">
-          <div class="hero-subtag">
-            <span class="gold-dash"></span>
-            <span>INTRODUCE WITH LAWSIGHT</span>
-          </div>
-          <h1 class="hero-maintitle">
-            We are here to protect any kind of Violence
-          </h1>
-          <p class="hero-leadtext">
-            Full range of shipping disputes such as charterparty disputes, demurrage claims and claims.
-          </p>
-          <div class="hero-btn-group">
-            <a href="#contact" class="btn btn-gold btn-lg">
-              <span>Contact us today</span>
-            </a>
-            <a href="#about" class="btn btn-dark-outline btn-lg">
-              <span>Read More</span>
-            </a>
+      <!-- Slide 1: Left-Aligned Content, Courthouse Library Background -->
+      <div class="hero-slide active" data-slide-index="0">
+        <div class="hero-slide-bg" style="background-image: url('https://demo.casethemes.net/lawsight/wp-content/uploads/2019/03/bg-slider1.jpg');"></div>
+        <div class="hero-slide-overlay overlay-left"></div>
+        <div class="container hero-slide-container align-left">
+          <div class="hero-slide-content text-left">
+            <span class="hero-subtitle">Introduce with LawSight</span>
+            <h1 class="hero-title">
+              We are here to protect<br> any kind of <cite>Violence</cite>
+            </h1>
+            <div class="hero-btn-wrap">
+              <a href="#contact" class="btn btn-gold hero-btn">
+                <span>Contact us today</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Slide 2: Center-Aligned Content, Lady Justice Background -->
+      <div class="hero-slide" data-slide-index="1">
+        <div class="hero-slide-bg" style="background-image: url('https://demo.casethemes.net/lawsight/wp-content/uploads/2019/03/bg-slider1-layer2.jpg');"></div>
+        <div class="hero-slide-overlay overlay-center"></div>
+        <div class="container hero-slide-container align-center">
+          <div class="hero-slide-content text-center">
+            <span class="hero-subtitle">Introduce with LawSight</span>
+            <h2 class="hero-title">
+              We are here to protect<br> any kind of <cite>Violence</cite>
+            </h2>
+            <div class="hero-btn-wrap">
+              <a href="#contact" class="btn btn-gold hero-btn">
+                <span>Contact us today</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Right-Aligned Content, Executive Attorney Background -->
+      <div class="hero-slide" data-slide-index="2">
+        <div class="hero-slide-bg" style="background-image: url('https://demo.casethemes.net/lawsight/wp-content/uploads/2019/03/bg-slider1-layer3.jpg');"></div>
+        <div class="hero-slide-overlay overlay-right"></div>
+        <div class="container hero-slide-container align-right">
+          <div class="hero-slide-content text-right">
+            <span class="hero-subtitle">Introduce with LawSight</span>
+            <h2 class="hero-title">
+              We are here to protect<br> any kind of <cite>Violence</cite>
+            </h2>
+            <div class="hero-btn-wrap">
+              <a href="#contact" class="btn btn-gold hero-btn">
+                <span>Contact us today</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zeus Circular Arrows (Revolution Slider Navigation) -->
+      <button class="hero-arrow hero-arrow-left" id="heroPrev" aria-label="Previous Slide">
+        <span>&#10094;</span>
+      </button>
+      <button class="hero-arrow hero-arrow-right" id="heroNext" aria-label="Next Slide">
+        <span>&#10095;</span>
+      </button>
+
+      <!-- Slider Indicators / Pagination Dots -->
+      <div class="hero-slider-dots" id="heroDots">
+        <button class="hero-slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero-slider-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero-slider-dot" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+
     </section>
 
     <!-- ======================================================================
