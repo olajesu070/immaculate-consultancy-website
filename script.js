@@ -1,13 +1,14 @@
 /**
- * IMMACULATE CONSULTANCY — INTERACTIVE JAVASCRIPT
- * Capabilities:
- * - Mobile Navigation Drawer & Backdrop Control
- * - Sticky Header Scroll Shadow
- * - ScrollSpy for Active Nav Links
- * - Interactive FAQ Accordion
- * - IntersectionObserver Scroll Reveal Animations
- * - Animated Statistics Counters
- * - Interactive Consultation Form with Instant Feedback & WhatsApp / Email Routing
+ * IMMACULATE CONSULTANCY — OFFICIAL SCRIPT
+ * Reference: https://demo.casethemes.net/lawsight/
+ *
+ * Core Features:
+ * - Mobile Navigation Drawer Toggle & Backdrop
+ * - Header Scroll Elevation
+ * - ScrollSpy for Main Navigation
+ * - Classic Accordion (+ / - Toggle)
+ * - Statistics Number Counter Animation
+ * - Consultation Request Validation & Immediate WhatsApp / Email Dispatch
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,68 +16,60 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
   // 1. Footer Year
   // --------------------------------------------------------------------------
-  const yearEl = document.getElementById('currentYear');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
+  const currentYearEl = document.getElementById('currentYear');
+  if (currentYearEl) {
+    currentYearEl.textContent = new Date().getFullYear();
   }
 
   // --------------------------------------------------------------------------
   // 2. Mobile Drawer Navigation
   // --------------------------------------------------------------------------
-  const menuToggle = document.getElementById('menuToggle');
-  const mobileDrawer = document.getElementById('mobileDrawer');
-  const drawerOverlay = document.getElementById('drawerOverlay');
-  const drawerClose = document.getElementById('drawerClose');
-  const drawerLinks = document.querySelectorAll('.drawer-link');
+  const mobileToggle = document.getElementById('mobileToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileBackdrop = document.getElementById('mobileBackdrop');
+  const mobileClose = document.getElementById('mobileClose');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
 
-  const openDrawer = () => {
-    menuToggle.classList.add('is-active');
-    menuToggle.setAttribute('aria-expanded', 'true');
-    mobileDrawer.classList.add('is-open');
-    mobileDrawer.setAttribute('aria-hidden', 'false');
-    drawerOverlay.classList.add('is-active');
+  const openMobileNav = () => {
+    mobileToggle.classList.add('is-active');
+    mobileToggle.setAttribute('aria-expanded', 'true');
+    mobileMenu.classList.add('is-open');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+    mobileBackdrop.classList.add('is-active');
     document.body.style.overflow = 'hidden';
   };
 
-  const closeDrawer = () => {
-    menuToggle.classList.remove('is-active');
-    menuToggle.setAttribute('aria-expanded', 'false');
-    mobileDrawer.classList.remove('is-open');
-    mobileDrawer.setAttribute('aria-hidden', 'true');
-    drawerOverlay.classList.remove('is-active');
+  const closeMobileNav = () => {
+    mobileToggle.classList.remove('is-active');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    mobileMenu.classList.remove('is-open');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    mobileBackdrop.classList.remove('is-active');
     document.body.style.overflow = '';
   };
 
-  if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-      const isOpen = mobileDrawer.classList.contains('is-open');
-      isOpen ? closeDrawer() : openDrawer();
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.contains('is-open') ? closeMobileNav() : openMobileNav();
     });
   }
 
-  if (drawerClose) {
-    drawerClose.addEventListener('click', closeDrawer);
-  }
+  if (mobileClose) mobileClose.addEventListener('click', closeMobileNav);
+  if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobileNav);
 
-  if (drawerOverlay) {
-    drawerOverlay.addEventListener('click', closeDrawer);
-  }
-
-  drawerLinks.forEach(link => {
-    link.addEventListener('click', closeDrawer);
-  });
+  mobileLinks.forEach(link => link.addEventListener('click', closeMobileNav));
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && mobileDrawer && mobileDrawer.classList.contains('is-open')) {
-      closeDrawer();
+    if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('is-open')) {
+      closeMobileNav();
     }
   });
 
   // --------------------------------------------------------------------------
-  // 3. Sticky Header Scroll Effect
+  // 3. Header Scroll Elevation
   // --------------------------------------------------------------------------
   const siteHeader = document.getElementById('siteHeader');
-  const handleScroll = () => {
+  const onScroll = () => {
     if (!siteHeader) return;
     if (window.scrollY > 30) {
       siteHeader.classList.add('is-scrolled');
@@ -84,126 +77,106 @@ document.addEventListener('DOMContentLoaded', () => {
       siteHeader.classList.remove('is-scrolled');
     }
   };
-  window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
   // --------------------------------------------------------------------------
-  // 4. ScrollSpy for Navigation Links
+  // 4. ScrollSpy for Navigation Items
   // --------------------------------------------------------------------------
-  const navLinks = document.querySelectorAll('.nav-link');
-  const sections = document.querySelectorAll('section[id]');
+  const navItems = document.querySelectorAll('.nav-item');
+  const pageSections = document.querySelectorAll('section[id]');
 
-  const highlightNav = () => {
-    const scrollPos = window.scrollY + 120;
-    sections.forEach(sec => {
-      const top = sec.offsetTop;
-      const height = sec.offsetHeight;
-      const id = sec.getAttribute('id');
-      if (scrollPos >= top && scrollPos < top + height) {
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${id}`) {
-            link.classList.add('active');
+  const updateActiveNav = () => {
+    const scrollPosition = window.scrollY + 140;
+    pageSections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+      if (scrollPosition >= top && scrollPosition < top + height) {
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href') === `#${id}`) {
+            item.classList.add('active');
           }
         });
       }
     });
   };
-  window.addEventListener('scroll', highlightNav, { passive: true });
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
 
   // --------------------------------------------------------------------------
-  // 5. Interactive FAQ Accordion
+  // 5. Classic Corporate Accordion (Lawsight Style)
   // --------------------------------------------------------------------------
-  const faqItems = document.querySelectorAll('.faq-item');
-  faqItems.forEach(item => {
-    const btn = item.querySelector('.faq-question');
+  const accItems = document.querySelectorAll('.acc-item');
+  accItems.forEach(item => {
+    const btn = item.querySelector('.acc-btn');
+    const sign = item.querySelector('.acc-sign');
+
     if (btn) {
       btn.addEventListener('click', () => {
-        const isCurrentActive = item.classList.contains('active');
-        
-        // Close all items
-        faqItems.forEach(otherItem => {
+        const isActive = item.classList.contains('active');
+
+        // Close all other panels
+        accItems.forEach(otherItem => {
           otherItem.classList.remove('active');
-          const otherBtn = otherItem.querySelector('.faq-question');
+          const otherBtn = otherItem.querySelector('.acc-btn');
+          const otherSign = otherItem.querySelector('.acc-sign');
           if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+          if (otherSign) otherSign.innerHTML = '&plus;';
         });
 
-        // Toggle clicked item
-        if (!isCurrentActive) {
+        // Toggle the current panel
+        if (!isActive) {
           item.classList.add('active');
           btn.setAttribute('aria-expanded', 'true');
+          if (sign) sign.innerHTML = '&minus;';
         }
       });
     }
   });
 
   // --------------------------------------------------------------------------
-  // 6. IntersectionObserver Scroll Reveal Animations
+  // 6. Statistics Counter Animation
   // --------------------------------------------------------------------------
-  const revealElements = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      root: null,
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
-    });
+  const counters = document.querySelectorAll('.counter-number[data-target]');
+  let countersAnimated = false;
 
-    revealElements.forEach(el => revealObserver.observe(el));
-  } else {
-    revealElements.forEach(el => el.classList.add('is-visible'));
-  }
-
-  // --------------------------------------------------------------------------
-  // 7. Dynamic Counter Animation for Trust Metrics
-  // --------------------------------------------------------------------------
-  const counterEls = document.querySelectorAll('.metric-num[data-target]');
-  let hasAnimated = false;
-
-  const animateCounters = () => {
-    if (hasAnimated) return;
-    counterEls.forEach(el => {
-      const target = parseInt(el.getAttribute('data-target'), 10);
-      const isPercentage = el.textContent.includes('%');
-      const isPlus = el.textContent.includes('+');
+  const triggerCounters = () => {
+    if (countersAnimated) return;
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-target'), 10);
       const duration = 1600;
-      const stepTime = 25;
-      const totalSteps = duration / stepTime;
-      const increment = target / totalSteps;
-      let current = 0;
+      const step = 25;
+      const steps = duration / step;
+      const inc = target / steps;
+      let val = 0;
 
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          current = target;
-          clearInterval(timer);
-          el.textContent = `${target}${isPercentage ? '%' : (isPlus ? '+' : '')}`;
+      const interval = setInterval(() => {
+        val += inc;
+        if (val >= target) {
+          counter.textContent = target;
+          clearInterval(interval);
         } else {
-          el.textContent = `${Math.floor(current)}${isPercentage ? '%' : (isPlus ? '+' : '')}`;
+          counter.textContent = Math.floor(val);
         }
-      }, stepTime);
+      }, step);
     });
-    hasAnimated = true;
+    countersAnimated = true;
   };
 
-  const metricsBar = document.querySelector('.metrics-bar');
-  if (metricsBar && 'IntersectionObserver' in window) {
-    const metricsObserver = new IntersectionObserver((entries) => {
+  const counterStrip = document.querySelector('.counter-strip');
+  if (counterStrip && 'IntersectionObserver' in window) {
+    const counterObserver = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
-        animateCounters();
+        triggerCounters();
+        counterObserver.disconnect();
       }
-    }, { threshold: 0.3 });
-    metricsObserver.observe(metricsBar);
+    }, { threshold: 0.25 });
+    counterObserver.observe(counterStrip);
   }
 
   // --------------------------------------------------------------------------
-  // 8. Consultation Request Form Validation & Processing
+  // 7. Consultation Form Validation & Instant Dispatch
   // --------------------------------------------------------------------------
   const consultForm = document.getElementById('consultationForm');
   const formStatus = document.getElementById('formStatus');
@@ -224,93 +197,83 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Validate Name
       if (!nameInput.value.trim()) {
-        nameInput.closest('.form-group').classList.add('has-error');
+        nameInput.closest('.form-field-group').classList.add('has-error');
         isValid = false;
       } else {
-        nameInput.closest('.form-group').classList.remove('has-error');
+        nameInput.closest('.form-field-group').classList.remove('has-error');
       }
 
       // Validate Email
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailInput.value.trim() || !emailPattern.test(emailInput.value.trim())) {
-        emailInput.closest('.form-group').classList.add('has-error');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
+        emailInput.closest('.form-field-group').classList.add('has-error');
         isValid = false;
       } else {
-        emailInput.closest('.form-group').classList.remove('has-error');
+        emailInput.closest('.form-field-group').classList.remove('has-error');
       }
 
       // Validate Phone
       if (!phoneInput.value.trim() || phoneInput.value.trim().length < 7) {
-        phoneInput.closest('.form-group').classList.add('has-error');
+        phoneInput.closest('.form-field-group').classList.add('has-error');
         isValid = false;
       } else {
-        phoneInput.closest('.form-group').classList.remove('has-error');
+        phoneInput.closest('.form-field-group').classList.remove('has-error');
       }
 
       // Validate Message
       if (!msgInput.value.trim()) {
-        msgInput.closest('.form-group').classList.add('has-error');
+        msgInput.closest('.form-field-group').classList.add('has-error');
         isValid = false;
       } else {
-        msgInput.closest('.form-group').classList.remove('has-error');
+        msgInput.closest('.form-field-group').classList.remove('has-error');
       }
 
       if (!isValid) {
-        formStatus.className = 'form-status-alert is-error';
-        formStatus.innerHTML = '<strong>Please correct the highlighted fields</strong> before submitting.';
+        formStatus.className = 'form-feedback-alert is-error';
+        formStatus.innerHTML = '<strong>Please fill in all required fields marked with an asterisk (*).</strong>';
         formStatus.style.display = 'block';
         return;
       }
 
-      // Prepare submission payload
-      const userName = encodeURIComponent(nameInput.value.trim());
-      const userEmail = encodeURIComponent(emailInput.value.trim());
-      const userPhone = encodeURIComponent(phoneInput.value.trim());
-      const selectedService = encodeURIComponent(serviceSelect.value);
-      const userOrg = encodeURIComponent(orgInput.value.trim() || 'Not specified');
-      const userMessage = encodeURIComponent(msgInput.value.trim());
-
-      // Prepare feedback button state
+      // Processing state
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<span>Processing Consultation Request...</span>';
 
       setTimeout(() => {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = '<span>Submit Consultation Request</span><svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>';
+        submitBtn.innerHTML = '<span>SUBMIT CONSULTATION REQUEST</span><span class="btn-icon">&rarr;</span>';
 
-        // Show comprehensive success alert with direct WhatsApp and Email links
-        const mailtoSubject = encodeURIComponent(`Consultation Inquiry: ${serviceSelect.value} - ${nameInput.value.trim()}`);
+        const mailtoSubject = encodeURIComponent(`Consultation Request: ${serviceSelect.value} - ${nameInput.value.trim()}`);
         const mailtoBody = encodeURIComponent(
           `Hello Immaculate Consultancy,\n\n` +
-          `Name: ${nameInput.value.trim()}\n` +
+          `Client Name: ${nameInput.value.trim()}\n` +
           `Email: ${emailInput.value.trim()}\n` +
           `Phone: ${phoneInput.value.trim()}\n` +
           `Organization/Role: ${orgInput.value.trim() || 'N/A'}\n` +
           `Practice Area: ${serviceSelect.value}\n\n` +
-          `Inquiry Details:\n${msgInput.value.trim()}\n\n` +
-          `Sent from Immaculate Consultancy Website`
+          `Inquiry Summary:\n${msgInput.value.trim()}\n\n` +
+          `Sent via Immaculate Consultancy Consultation Portal`
         );
 
         const waText = encodeURIComponent(
           `Hello Immaculate Consultancy, my name is ${nameInput.value.trim()}. ` +
-          `I am interested in ${serviceSelect.value}. ` +
-          `Overview: ${msgInput.value.trim()}`
+          `I would like to request a consultation regarding ${serviceSelect.value}. ` +
+          `Details: ${msgInput.value.trim()}`
         );
 
-        formStatus.className = 'form-status-alert is-success';
+        formStatus.className = 'form-feedback-alert is-success';
         formStatus.innerHTML = `
-          <strong>Thank you, ${nameInput.value.trim()}!</strong> Your consultation request has been drafted.<br>
-          Our senior advisory desk will respond within 2 to 4 business hours.<br><br>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px;">
-            <a href="mailto:abbeyance20@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}" class="btn btn-gold btn-sm" style="display:inline-flex;">Send Directly via Email &rarr;</a>
-            <a href="https://wa.me/2347088109367?text=${waText}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="display:inline-flex; border-color: rgba(255,255,255,0.4); color: #fff;">Open in WhatsApp &rarr;</a>
+          <strong>Thank you, ${nameInput.value.trim()}!</strong> Your consultation inquiry has been recorded.<br>
+          Our senior advisory desk will follow up within 2 to 4 business hours.<br><br>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px;">
+            <a href="mailto:abbeyance20@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}" class="btn btn-gold btn-sm" style="display:inline-flex;">Send Direct Email &rarr;</a>
+            <a href="https://wa.me/2347088109367?text=${waText}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white btn-sm" style="display:inline-flex; border-color: rgba(255,255,255,0.4);">Chat on WhatsApp &rarr;</a>
           </div>
         `;
         formStatus.style.display = 'block';
 
-        // Reset form inputs after brief delay
         consultForm.reset();
-      }, 700);
+      }, 600);
 
     });
   }
