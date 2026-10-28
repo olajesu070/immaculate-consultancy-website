@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileDrawer = document.getElementById('mobileDrawer');
   const mobileOverlay = document.getElementById('mobileOverlay');
   const drawerClose = document.getElementById('drawerClose');
-  const drawerLinks = document.querySelectorAll('.drawer-link');
+  const drawerLinks = document.querySelectorAll('.drawer-link, .drawer-sublink');
 
   const openDrawer = () => {
     if (mobileDrawer) {
