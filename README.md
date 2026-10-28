@@ -1,55 +1,95 @@
-# Immaculate Consultancy — Legal Counsel & Strategic Advisory
+# LawSight — Lawyer & Attorney Theme Demo (Exact Implementation)
 
-> **Committed to Law, Justice & Decisive Strategic Solutions.**
+> **"We are here to protect any kind of Violence with experience."**
 
-A prestigious, high-end corporate website for **Immaculate Consultancy**, crafted with clean vanilla HTML5, CSS3, and modern JavaScript. Inspired directly by the distinguished corporate architecture of **[Lawsight](https://demo.casethemes.net/lawsight/)** by CaseThemes, with high-definition imagery and practice areas centered on **Law & Justice**.
+This repository contains the exact design, typography, structure, visual layering, and textual replication of **[LawSight – Lawyer & Attorney WordPress Theme Demo](https://demo.casethemes.net/lawsight/)** by CaseThemes, implemented cleanly in high-performance vanilla HTML5, CSS3, and JavaScript.
 
-## Live Website & Repositories
-- **Production URL:** [https://immaculate-consultancy-website.vercel.app/](https://immaculate-consultancy-website.vercel.app/)
+---
+
+## Live Links & References
+- **Exact Reference URL:** [https://demo.casethemes.net/lawsight/](https://demo.casethemes.net/lawsight/)
+- **Vercel Production Deployment:** [https://immaculate-consultancy-website.vercel.app/](https://immaculate-consultancy-website.vercel.app/)
 - **GitHub Repository:** [https://github.com/olajesu070/immaculate-consultancy-website](https://github.com/olajesu070/immaculate-consultancy-website)
-- **Design Inspiration Reference:** [https://demo.casethemes.net/lawsight/](https://demo.casethemes.net/lawsight/)
+- **Local Preview Server:** [http://localhost:8080](http://localhost:8080)
 
 ---
 
-## High-Definition Law & Justice Imagery & Layout
+## 10 Replicated Sections & Features
 
-- **Courthouse Marble Pillars Hero:**
-  - Majestic Neoclassical courthouse marble architecture background (`photo-1575517111478-7f6afd0973db`), authoritative *Playfair Display* typography, and dual legal consultation CTAs.
-  - **3 Overlapping Feature Boxes:**
-    1. `98% Case Success` (Statutory scrutiny and commercial realities).
-    2. `Confidential Counsel` (Attorney-client privilege and confidential sounding board).
-    3. `Decisive Advocacy` (Protection of rights, contracts, and regulatory standing).
-
-- **The Scales of Justice & Law Library:**
-  - Iconic brass Scales of Justice and leather law codes (`photo-1589829545856-d10d557cf95f`).
-  - Gold experience badge: `10+ YEARS OF PROVEN LEGAL & ADVISORY EXCELLENCE`.
-
-- **6 Law & Justice Practice Areas:**
-  1. **Corporate & Commercial Law:** Contract drafting & legal agreement review (`photo-1454165804606-c3d57bc86b40`).
-  2. **Dispute Resolution & Litigation Strategy:** Judicial wooden gavel and law codes (`photo-1505664194779-8beaceb93744`).
-  3. **Regulatory Compliance & Governance:** Bronze Lady Justice balance statue (`photo-1589578527966-fdac0f44566c`).
-  4. **Property Advisory & Title Verification:** Open courtroom legal text and deed scrutiny (`photo-1589994965851-a8f479c573a9`).
-  5. **Executive Counsel & Legal Diligence:** Formal legal counsel chambers conference (`photo-1450133064473-71024230f91b`).
-  6. **Ongoing Legal Retainer Partnership:** Classical mahogany law library (`photo-1521587760476-6c12a4b040da`).
-
-- **Brand Logo Suite:**
-  - Scalable vector mark featuring the **Scales of Justice & Law Pillar ("I")** with gold balance pans and diamond apex (`assets/logo.svg`, `assets/logo-white.svg`, `assets/logo-mark.svg`, `assets/favicon.svg`).
-
----
-
-## Direct Legal Contacts
-
-- **Primary Legal Line:** [0708 810 9367](tel:+2347088109367) (`+234 708 810 9367`)
-- **Direct Advisory Desk:** [0810 694 3942](tel:+2348106943942) (`+234 810 694 3942`)
-- **Official Inquiries:** [abbeyance20@gmail.com](mailto:abbeyance20@gmail.com)
-- **WhatsApp Direct:** [Chat with Legal Desk](https://wa.me/2347088109367)
+1. **Top Bar Header:**
+   - Address (`6701 Democracy Blvd, Suite 300, USA`), 24/7 hotline (`0800-123456`), email (`support@lawsight.com`), working hours (`Mon – Sat: 8.00am – 6.00pm`), and social links.
+2. **Sticky Main Navigation & Mobile Drawer:**
+   - LawSight official dark logo, navigation links (`Home`, `Services`, `About Us`, `Portfolio`, `Attorneys`, `News`, `Contact`), search trigger, and gold `FREE CONSULTATION` CTA button.
+   - Interactive slide-in mobile drawer with overlay and touch/click dismissal.
+3. **Layered Hero Slider:**
+   - Background courtroom canvas with layered Lady Justice statue (`bg-slider1-layer2.jpg`) and executive attorney (`bg-slider1-layer3.jpg`).
+   - Exact heading: *"We are here to protect any kind of Violence"*.
+   - Subtitle: *"Full range of shipping disputes such as charterparty disputes, demurrage claims and claims."*
+   - Direct CTAs: `Contact us today` and `Read More`.
+4. **3 Signature Overlapping Boxes:**
+   - Gold: `99% winning guarantee`
+   - Dark: `Secure management`
+   - Black: `Full time support`
+5. **About Us Section:**
+   - Executive meeting image with gold `30+ YEARS OF EXPERIENCE` badge.
+   - Headline: *"We are here to fight against any violance with experience"*.
+   - Founder signature block: **Natalia Duke** *(Chairman and founder)* with official signature vector.
+6. **Services (6 Practice Areas):**
+   - `01 Family Law`
+   - `02 Civil Law`
+   - `03 Criminal Law`
+   - `04 Business Law`
+   - `05 Education Law`
+   - `06 Real Estate law`
+7. **Fun Fact Achievement Counter Strip:**
+   - Deep navy background with scroll-triggered animated counters:
+     - `750` Completed works
+     - `890` Satisfied clients
+     - `120` Winning awards
+     - `50` Team members
+8. **Team / Expert Attorneys:**
+   - 4 attorney profile cards with hover socials:
+     - **Jonson Leo** (Civil Lawyer)
+     - **Mostafa Amin** (Criminal Lawyer)
+     - **Neobir Fro** (Business Lawyer)
+     - **Armor Byron** (Family Lawyer)
+9. **Portfolio & Case Studies with Interactive Category Filtering:**
+   - Interactive filter tabs: `All`, `Business`, `Criminal`, `Civil`, `Personal`, `Financial`.
+   - 6 case studies with hover zoom and gradient badge overlays:
+     - *Finance & Banking*
+     - *Fire Accident*
+     - *Sexual Offences*
+     - *Drug Offences*
+     - *Financial Law*
+     - *Merger & Acquisition*
+10. **Client Testimonial Slider & Dots Navigation:**
+    - Testimonial carousel with dot navigation and auto-rotation:
+      - **Willem Eduard** (Envato Author)
+      - **Amber Lee** (Co-founder)
+      - **Anny Leo** (Envato Author)
+11. **Contact & Free Consultation Dual Block:**
+    - Contact info column with Romanian headquarters address, telephone numbers, and email.
+    - Integrated client direct lines: `0708 810 9367`, `0810 694 3942`, `abbeyance20@gmail.com`.
+    - Interactive consultation request form with live validation and WhatsApp / direct email links.
+12. **Latest News & Insights:**
+    - 3 corporate blog articles with thumbnails and publication dates:
+      - *Strategy for Norway's Peion Fund Global.* (Oct 18, 2018)
+      - *What we are capable of usually gets discovered.* (Aug 18, 2018)
+      - *Food industry leaders often change their promoters.* (Jul 12, 2018)
+13. **4-Column Footer & Newsletter:**
+    - Full-width email newsletter subscription strip.
+    - 4 columns: Brand & Melbourne bio, quick links, client support links, and recent posts.
+    - Copyright bar with "Back to Top" smooth scrolling button.
 
 ---
 
 ## Local Development & Preview
 
+The local web server is configured and running:
+
 ```bash
-# Start a local preview server
+# Start local preview server (port 8080)
 python -m http.server 8080 --bind 127.0.0.1
 ```
-Open **[http://localhost:8080](http://localhost:8080)** in your browser.
+
+Access the preview at: **[http://localhost:8080](http://localhost:8080)**.
