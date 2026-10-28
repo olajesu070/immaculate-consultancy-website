@@ -1,37 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
   <defs>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e5c58b"/>
+    <linearGradient id="goldLaw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eed59e"/>
       <stop offset="50%" stop-color="#d5aa6d"/>
-      <stop offset="100%" stop-color="#b38749"/>
-    </linearGradient>
-    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#142138"/>
-      <stop offset="100%" stop-color="#0a1220"/>
+      <stop offset="100%" stop-color="#b08343"/>
     </linearGradient>
   </defs>
 
-  <!-- Background Emblem Base -->
-  <rect x="4" y="4" width="92" height="92" rx="14" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  <!-- Background Shield / Square Base -->
+  <rect x="4" y="4" width="92" height="92" rx="10" fill="#0e1726" stroke="url(#goldLaw)" stroke-width="2.2"/>
 
-  <!-- Geometric Interlocking "I" and "C" Monogram -->
-  <!-- Outer Arch "C" -->
-  <path d="M 68 28 C 58 20 40 22 29 33 C 18 44 18 64 29 75 C 40 86 58 88 68 80" 
-        fill="none" 
-        stroke="url(#goldGrad)" 
-        stroke-width="7" 
-        stroke-linecap="round"/>
+  <!-- Scales of Justice & Law Pillar Emblem -->
+  <!-- Central Pillar Apex Diamond -->
+  <polygon points="50,15 54,20 50,25 46,20" fill="url(#goldLaw)"/>
 
-  <!-- Central Strategic Pillar "I" -->
-  <path d="M 50 38 L 50 78" 
-        fill="none" 
-        stroke="#ffffff" 
-        stroke-width="7" 
-        stroke-linecap="round"/>
+  <!-- Main Balance Crossbeam -->
+  <path d="M 24 32 L 50 30 L 76 32" fill="none" stroke="url(#goldLaw)" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Compass Apex Diamond at Top -->
-  <polygon points="50,18 56,26 50,34 44,26" fill="url(#goldGrad)"/>
+  <!-- Central Column (The "I" Pillar of Law) -->
+  <line x1="50" y1="26" x2="50" y2="76" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+  
+  <!-- Base Pedestal -->
+  <line x1="38" y1="76" x2="62" y2="76" stroke="url(#goldLaw)" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="32" y1="82" x2="68" y2="82" stroke="url(#goldLaw)" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Precision Accent Dot -->
-  <circle cx="72" cy="74" r="3.5" fill="url(#goldGrad)"/>
+  <!-- Left Scale Pan -->
+  <line x1="26" y1="33" x2="18" y2="52" stroke="url(#goldLaw)" stroke-width="1.6"/>
+  <line x1="26" y1="33" x2="34" y2="52" stroke="url(#goldLaw)" stroke-width="1.6"/>
+  <path d="M 16 52 C 16 60 36 60 36 52 Z" fill="url(#goldLaw)"/>
+
+  <!-- Right Scale Pan -->
+  <line x1="74" y1="33" x2="66" y2="52" stroke="url(#goldLaw)" stroke-width="1.6"/>
+  <line x1="74" y1="33" x2="82" y2="52" stroke="url(#goldLaw)" stroke-width="1.6"/>
+  <path d="M 64 52 C 64 60 84 60 84 52 Z" fill="url(#goldLaw)"/>
 </svg>
