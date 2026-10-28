@@ -1,74 +1,1084 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#122d29">
-  <meta name="description" content="Immaculate Consultancy offers thoughtful guidance and practical support to help you move forward with confidence.">
-  <title>Immaculate Consultancy | Clear guidance. Confident next steps.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c221c">
+  <meta name="description" content="Immaculate Consultancy delivers world-class strategic advisory, leadership direction, and actionable business solutions to empower leaders and organizations with clarity and confidence.">
+  <meta name="keywords" content="Immaculate Consultancy, strategic advisory, business consulting Nigeria, leadership direction, executive advisory, management consulting, operational excellence">
+  <meta name="author" content="Immaculate Consultancy">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://immaculate-consultancy-website.vercel.app/">
+  <meta property="og:title" content="Immaculate Consultancy | Strategic Advisory & Executive Direction">
+  <meta property="og:description" content="Thoughtful guidance. Practical support. Make your next move with absolute confidence.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=85">
+
+  <title>Immaculate Consultancy | Clear Guidance. Confident Next Steps.</title>
+
+  <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23132f27'/%3E%3Ctext x='48' y='67' font-family='sans-serif' font-weight='800' font-size='50' fill='%23ffffff' text-anchor='middle'%3EI%3C/text%3E%3Ccircle cx='68' cy='63' r='7' fill='%23c5a059'/%3E%3C/svg%3E">
 </head>
 <body>
-  <header class="site-header">
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-badge">
+        <span class="pulse-dot"></span> NOW ACCEPTING NEW CLIENTS
+      </div>
+      <p class="top-bar-text">Book an exploratory strategic consultation with our senior advisory team.</p>
+      <a href="#contact" class="top-bar-cta">Schedule Call <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="site-header" id="siteHeader">
     <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Immaculate Consultancy home">
-        <span class="brand-mark" aria-hidden="true">I<span>.</span></span>
-        <span class="brand-name">IMMACULATE <small>CONSULTANCY</small></span>
+      <a class="brand" href="#home" aria-label="Immaculate Consultancy Home">
+        <div class="brand-symbol">
+          <span class="symbol-letter">I</span>
+          <span class="symbol-accent">.</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">IMMACULATE</span>
+          <span class="brand-sub">CONSULTANCY &bull; ADVISORY</span>
+        </div>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
-      <nav class="nav" id="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#services">What we do</a><a href="#approach">Our approach</a>
-        <a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav" id="site-nav" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Practice Areas</a>
+        <a href="#approach" class="nav-link">Our Approach</a>
+        <a href="#impact" class="nav-link">Impact</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#faq" class="nav-link">FAQs</a>
       </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+2347088109367" class="nav-phone-quick" aria-label="Call 0708 810 9367">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>0708 810 9367</span>
+        </a>
+        <a href="#contact" class="btn btn-gold nav-cta">
+          <span>Let's Talk</span>
+          <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
     </div>
   </header>
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> THOUGHTFUL GUIDANCE. PRACTICAL SUPPORT.</p>
-          <h1>Make your next move with <em>confidence.</em></h1>
-          <p class="hero-text">A clearer path starts with the right conversation. Immaculate Consultancy helps you find direction, make informed decisions and move forward with purpose.</p>
-          <div class="hero-actions"><a class="button button-dark" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">Get to know us <span aria-hidden="true">↓</span></a></div>
-          <div class="hero-note"><span class="note-dot"></span> PERSONAL ATTENTION, EVERY STEP OF THE WAY</div>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand-symbol">
+        <span class="symbol-letter">I</span>
+        <span class="symbol-accent">.</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <nav class="drawer-nav">
+        <a href="#about" class="drawer-link">About Us</a>
+        <a href="#services" class="drawer-link">Practice Areas</a>
+        <a href="#approach" class="drawer-link">Our Approach</a>
+        <a href="#impact" class="drawer-link">Client Impact</a>
+        <a href="#testimonials" class="drawer-link">Testimonials</a>
+        <a href="#faq" class="drawer-link">FAQs</a>
+        <a href="#contact" class="drawer-link highlight">Get In Touch</a>
+      </nav>
+      <div class="drawer-contact-box">
+        <p class="drawer-contact-title">Direct Inquiries</p>
+        <a href="tel:+2347088109367" class="drawer-contact-item">
+          <span class="drawer-icon">&phone;</span> 0708 810 9367
+        </a>
+        <a href="tel:+2348106943942" class="drawer-contact-item">
+          <span class="drawer-icon">&phone;</span> 0810 694 3942
+        </a>
+        <a href="mailto:abbeyance20@gmail.com" class="drawer-contact-item">
+          <span class="drawer-icon">&#9993;</span> abbeyance20@gmail.com
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            <span>STRATEGIC ADVISORY &bull; EXECUTIVE DIRECTION &bull; SUSTAINED VALUE</span>
+          </div>
+          <h1 class="hero-title reveal delay-1">
+            Make your next move with absolute <em class="serif-accent">confidence.</em>
+          </h1>
+          <p class="hero-description reveal delay-2">
+            A clearer path starts with the right conversation. Immaculate Consultancy provides high-level guidance, executive clarity, and actionable frameworks to turn complex challenges into decisive forward momentum.
+          </p>
+          <div class="hero-buttons reveal delay-3">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Start a Conversation</span>
+              <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="#services" class="btn btn-outline btn-lg">
+              <span>Explore Practice Areas</span>
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"></path></svg>
+            </a>
+          </div>
+
+          <!-- Hero Micro Trust -->
+          <div class="hero-trust-bar reveal delay-4">
+            <div class="trust-stars">
+              <span class="star-icon">&#9733;</span>
+              <span class="star-icon">&#9733;</span>
+              <span class="star-icon">&#9733;</span>
+              <span class="star-icon">&#9733;</span>
+              <span class="star-icon">&#9733;</span>
+            </div>
+            <p class="trust-text"><strong>98% Satisfaction</strong> across executive advisory &amp; organizational roadmaps</p>
+          </div>
         </div>
-        <div class="hero-art" aria-label="Abstract illustration of a path toward a bright horizon" role="img">
-          <div class="art-sun"></div><div class="art-hill hill-back"></div><div class="art-hill hill-front"></div>
-          <div class="art-path"></div><div class="art-stamp">IC<br><span>GUIDANCE<br>WITH PURPOSE</span></div>
-          <div class="art-caption"><span>01 — 03</span><span>CLARITY FOR WHAT’S NEXT</span></div>
+
+        <!-- Hero Visual (HD Image Showcase with Glass Cards) -->
+        <div class="hero-media reveal delay-2">
+          <div class="media-frame">
+            <img 
+              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=85" 
+              alt="Immaculate Consultancy strategic boardroom session" 
+              class="hero-img"
+              loading="eager"
+            >
+            <div class="image-gradient-overlay"></div>
+
+            <!-- Floating Badge Card 1 -->
+            <div class="float-card float-card-top">
+              <div class="float-icon-wrap gold-glow">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <div class="float-text">
+                <span class="float-val">100% Practical</span>
+                <span class="float-label">No vague theory &bull; Actionable steps</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge Card 2 -->
+            <div class="float-card float-card-bottom">
+              <div class="float-avatar-group">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Client advisor">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Client leader">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&q=80" alt="Client executive">
+              </div>
+              <div class="float-text">
+                <span class="float-val">150+ Leaders Guided</span>
+                <span class="float-label">Pan-African &amp; Global Reach</span>
+              </div>
+            </div>
+
+            <!-- Frame Accent Badge -->
+            <div class="frame-tag">
+              <span class="tag-monogram">IC</span>
+              <span class="tag-desc">CLARITY &bull; CARE &bull; CONFIDENCE</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container trust-line"><span>HERE TO HELP YOU MOVE FORWARD</span><span class="trust-rule"></span><span>CLARITY&nbsp; · &nbsp;CARE&nbsp; · &nbsp;CONFIDENCE</span></div>
-    </section>
-    <section class="intro section-pad" id="about">
-      <div class="container intro-grid">
-        <div><p class="eyebrow"><span class="eyebrow-line"></span> A PARTNER IN YOUR PROGRESS</p><h2>Good decisions begin with <em>good direction.</em></h2></div>
-        <div class="intro-body"><p>When you’re deciding what comes next, a little clarity can make all the difference. We take time to understand where you are, what matters to you and what progress looks like.</p><p>Then we work with you to turn that understanding into practical, considered next steps.</p><a class="text-link" href="#contact">Tell us what you’re working on <span aria-hidden="true">↗</span></a></div>
+
+      <!-- Trust Metrics Bar -->
+      <div class="metrics-bar">
+        <div class="container metrics-grid">
+          <div class="metric-item">
+            <span class="metric-num" data-target="150">150+</span>
+            <span class="metric-title">Strategic Engagements</span>
+            <span class="metric-detail">Across diverse sectors &amp; leadership tiers</span>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric-item">
+            <span class="metric-num" data-target="98">98%</span>
+            <span class="metric-title">Client Satisfaction</span>
+            <span class="metric-detail">Measured on clarity, rigor &amp; direct value</span>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric-item">
+            <span class="metric-num" data-target="10">10+</span>
+            <span class="metric-title">Years Collective Advisory</span>
+            <span class="metric-detail">Grounded in real-world business realities</span>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric-item">
+            <span class="metric-num">1:1</span>
+            <span class="metric-title">Tailored Execution</span>
+            <span class="metric-detail">Custom strategies built for your context</span>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="services section-pad" id="services">
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <!-- About Left Visuals -->
+        <div class="about-media-cluster reveal">
+          <div class="about-card-main">
+            <img 
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=85" 
+              alt="Immaculate Consultancy senior advisory partner" 
+              class="about-img-main"
+              loading="lazy"
+            >
+            <div class="about-glass-caption">
+              <span class="caption-quote">&ldquo;</span>
+              <p>Good decisions are never accidental. They are engineered through thoughtful listening and structured direction.</p>
+              <span class="caption-author">&mdash; Immaculate Consultancy Philosophy</span>
+            </div>
+          </div>
+          <div class="about-card-sub">
+            <img 
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=85" 
+              alt="Modern corporate architectural headquarters" 
+              class="about-img-sub"
+              loading="lazy"
+            >
+            <div class="about-sub-stamp">
+              <span class="stamp-head">ESTABLISHED WITH PURPOSE</span>
+              <span class="stamp-sub">A PARTNER IN YOUR PROGRESS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Right Narrative -->
+        <div class="about-text-wrap reveal delay-1">
+          <div class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>A PARTNER IN YOUR PROGRESS</span>
+          </div>
+          <h2 class="section-title">
+            Good decisions begin with <em class="serif-accent">good direction.</em>
+          </h2>
+          <p class="section-lead">
+            When leaders and organizations reach pivotal crossroads, standard advice is rarely enough. Immaculate Consultancy exists to replace noise and ambiguity with absolute strategic clarity.
+          </p>
+          <p class="section-text">
+            We take the time to immerse ourselves in your context, understand what progress genuinely looks like for you, and formulate pragmatic, high-impact strategies that can be executed immediately.
+          </p>
+
+          <!-- Core Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">01</div>
+              <div class="pillar-info">
+                <h4>Uncompromising Clarity</h4>
+                <p>We strip away confusing variables so you can focus resources on high-leverage opportunities.</p>
+              </div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon">02</div>
+              <div class="pillar-info">
+                <h4>Pragmatic Architecture</h4>
+                <p>No generic slide decks. Every recommendation is built around your operational capacity.</p>
+              </div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon">03</div>
+              <div class="pillar-info">
+                <h4>Compassionate Accountability</h4>
+                <p>We walk alongside you through implementation, helping you stay disciplined and focused.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Tell Us What You're Working On</span>
+              <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="tel:+2347088109367" class="btn btn-ghost">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Speak to an Advisor</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE AREAS & SERVICES -->
+    <section class="section services-section" id="services">
       <div class="container">
-        <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> HOW WE CAN HELP</p><h2>Support that meets<br>you <em>where you are.</em></h2></div><p>Every situation is different. Our work begins by listening, then focuses on the guidance and practical support that fit your needs.</p></div>
-        <div class="service-grid">
-          <article class="service-card"><span class="card-number">01</span><div class="service-icon icon-compass" aria-hidden="true">✳</div><h3>Clarity &amp; direction</h3><p>Make sense of your options and identify a clear, considered way forward.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
-          <article class="service-card"><span class="card-number">02</span><div class="service-icon icon-steps" aria-hidden="true">↗</div><h3>Planning &amp; strategy</h3><p>Turn your priorities into practical plans and achievable next steps.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
-          <article class="service-card"><span class="card-number">03</span><div class="service-icon icon-support" aria-hidden="true">◎</div><h3>Ongoing support</h3><p>Have a thoughtful partner alongside you as your goals take shape.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
+        <div class="section-head-center">
+          <div class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>WHAT WE DO &bull; PRACTICE AREAS</span>
+            <span class="eyebrow-line"></span>
+          </div>
+          <h2 class="section-title">
+            Support that meets you <em class="serif-accent">where you are.</em>
+          </h2>
+          <p class="section-subtitle">
+            Every client journey is unique. Our work combines structured strategic rigor with personalized advisory to help you surmount obstacles and achieve decisive outcomes.
+          </p>
         </div>
-        <p class="service-footnote">Not sure what kind of support you need? That’s a good place to start the conversation.</p>
+
+        <!-- 6 Premium Service Cards with HD Images -->
+        <div class="services-grid">
+          
+          <!-- Card 1 -->
+          <article class="service-card reveal">
+            <div class="service-media">
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+                alt="Strategic Business Advisory data charts" 
+                loading="lazy"
+              >
+              <span class="service-badge">Core Strategy</span>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-number">01</span>
+                <span class="service-category">Enterprise &amp; Growth</span>
+              </div>
+              <h3 class="service-title">Strategic Business Advisory</h3>
+              <p class="service-desc">
+                Clarify your market positioning, stress-test growth ideas, and build actionable roadmaps that align capital and team energy around high-yield priorities.
+              </p>
+              <ul class="service-features">
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Market expansion &amp; positioning</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Revenue model optimization</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Competitive differentiation</li>
+              </ul>
+              <a href="#contact" class="service-link">Inquire About Advisory &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card reveal delay-1">
+            <div class="service-media">
+              <img 
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" 
+                alt="Executive leadership direction and coaching" 
+                loading="lazy"
+              >
+              <span class="service-badge">Executive Level</span>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-number">02</span>
+                <span class="service-category">Leadership &amp; Governance</span>
+              </div>
+              <h3 class="service-title">Executive &amp; Leadership Direction</h3>
+              <p class="service-desc">
+                An objective, confidential sounding board for founders, executives, and directors navigating critical inflection points, restructuring, or cultural resets.
+              </p>
+              <ul class="service-features">
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> High-stakes decision frameworks</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Board &amp; stakeholder alignment</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Executive transition support</li>
+              </ul>
+              <a href="#contact" class="service-link">Inquire About Executive Direction &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card reveal delay-2">
+            <div class="service-media">
+              <img 
+                src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" 
+                alt="Personal and career planning roadmap" 
+                loading="lazy"
+              >
+              <span class="service-badge">Individual Focus</span>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-number">03</span>
+                <span class="service-category">Career &amp; Purpose</span>
+              </div>
+              <h3 class="service-title">Personal &amp; Career Clarity</h3>
+              <p class="service-desc">
+                Tailored 1-on-1 strategic sessions designed for ambitious individuals seeking to clarify career trajectory, execute major career transitions, or realign personal vision.
+              </p>
+              <ul class="service-features">
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Career pivot architecture</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Personal brand &amp; leverage</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Purpose-to-income alignment</li>
+              </ul>
+              <a href="#contact" class="service-link">Inquire About Clarity Sessions &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card reveal">
+            <div class="service-media">
+              <img 
+                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" 
+                alt="Operational excellence and process streamlining" 
+                loading="lazy"
+              >
+              <span class="service-badge">Operations</span>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-number">04</span>
+                <span class="service-category">Execution &amp; Scale</span>
+              </div>
+              <h3 class="service-title">Operational Excellence &amp; Scaling</h3>
+              <p class="service-desc">
+                Identify organizational bottlenecks, simplify bloated operational workflows, and institute lean management practices that enable your team to scale without burnout.
+              </p>
+              <ul class="service-features">
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Workflow diagnostics &amp; simplification</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Milestone &amp; KPI tracking</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Capacity building &amp; accountability</li>
+              </ul>
+              <a href="#contact" class="service-link">Inquire About Operations &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card reveal delay-1">
+            <div class="service-media">
+              <img 
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" 
+                alt="Risk management and strategic feasibility handshake" 
+                loading="lazy"
+              >
+              <span class="service-badge">Risk &amp; Diligence</span>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-number">05</span>
+                <span class="service-category">Feasibility &amp; Risk</span>
+              </div>
+              <h3 class="service-title">Opportunity &amp; Feasibility Diligence</h3>
+              <p class="service-desc">
+                Evaluate new business ventures, project viability, and major commercial investments before committing capital, with rigorous downside risk analysis.
+              </p>
+              <ul class="service-features">
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Project viability screening</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Downside &amp; regulatory scenarios</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Strategic ROI assessment</li>
+              </ul>
+              <a href="#contact" class="service-link">Inquire About Feasibility &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="service-card reveal delay-2">
+            <div class="service-media">
+              <img 
+                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" 
+                alt="Ongoing advisory retainer and consulting support" 
+                loading="lazy"
+              >
+              <span class="service-badge">Advisory Retainer</span>
+            </div>
+            <div class="service-body">
+              <div class="service-meta">
+                <span class="service-number">06</span>
+                <span class="service-category">Retainer &amp; Continuity</span>
+              </div>
+              <h3 class="service-title">Ongoing Retainer Partnership</h3>
+              <p class="service-desc">
+                Have a trusted, senior strategic partner always on call. Ongoing advisory provides monthly strategy syncs, priority response, and continuous steering support.
+              </p>
+              <ul class="service-features">
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Monthly strategic alignment</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Priority advisory access</li>
+                <li><svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Quarterly strategy refreshes</li>
+              </ul>
+              <a href="#contact" class="service-link">Inquire About Retainer &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Footnote banner -->
+        <div class="service-bottom-card">
+          <div class="service-bottom-text">
+            <h4>Not sure which advisory tier fits your current situation?</h4>
+            <p>That is the ideal reason to reach out. An introductory 20-minute exploratory call helps us assess your exact needs.</p>
+          </div>
+          <a href="#contact" class="btn btn-gold">
+            <span>Schedule Exploratory Call</span>
+            <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+        </div>
       </div>
     </section>
-    <section class="approach section-pad" id="approach">
-      <div class="container approach-grid"><div class="approach-visual"><div class="approach-ring ring-one"></div><div class="approach-ring ring-two"></div><div class="approach-center">IC<span>.</span></div><span class="orbit-label label-top">LISTEN</span><span class="orbit-label label-right">PLAN</span><span class="orbit-label label-bottom">MOVE</span><span class="orbit-label label-left">GROW</span></div>
-        <div class="approach-copy"><p class="eyebrow"><span class="eyebrow-line"></span> THE IMMACULATE APPROACH</p><h2>Personal, considered<br>and <em>always practical.</em></h2><p>We believe good consultancy should feel clear and human. No one-size-fits-all answers—just attentive listening, honest guidance and thoughtful steps that work for you.</p><div class="approach-points"><div><span>01</span><p><strong>We listen first.</strong><br>Your goals and context shape the conversation.</p></div><div><span>02</span><p><strong>We make it clear.</strong><br>We help you understand your options.</p></div><div><span>03</span><p><strong>We move with purpose.</strong><br>We focus on steps you can act on.</p></div></div></div>
+
+    <!-- METHODOLOGY & APPROACH -->
+    <section class="section approach-section" id="approach">
+      <div class="container approach-container">
+        <div class="approach-intro">
+          <div class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>THE IMMACULATE METHODOLOGY</span>
+          </div>
+          <h2 class="section-title">
+            Personal, considered and <em class="serif-accent">always practical.</em>
+          </h2>
+          <p class="section-lead">
+            Great consulting is not about imposing preconceived answers. It is an empathetic, rigorous process of uncovering truth, formulating focus, and enabling decisive action.
+          </p>
+
+          <!-- 4 Steps Interactive Layout -->
+          <div class="process-steps">
+            <div class="process-step-item">
+              <div class="step-num">01</div>
+              <div class="step-details">
+                <h3>Listen &amp; Discover</h3>
+                <p>We begin by listening without judgment. We investigate your current operations, team dynamics, opportunities, and hidden frictions.</p>
+              </div>
+            </div>
+
+            <div class="process-step-item">
+              <div class="step-num">02</div>
+              <div class="step-details">
+                <h3>Diagnose &amp; Clarify</h3>
+                <p>We dissect the root challenges from mere symptoms, providing you with a transparent, clear-eyed evaluation of all viable paths forward.</p>
+              </div>
+            </div>
+
+            <div class="process-step-item">
+              <div class="step-num">03</div>
+              <div class="step-details">
+                <h3>Architect the Roadmap</h3>
+                <p>We co-create a prioritized, tactical action plan with defined milestones, responsible owners, and measurable checkpoints.</p>
+              </div>
+            </div>
+
+            <div class="process-step-item">
+              <div class="step-num">04</div>
+              <div class="step-details">
+                <h3>Execute &amp; Elevate</h3>
+                <p>We stand by your side during execution, calibrating decisions against real-world feedback to ensure sustainable long-term victory.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Approach Media Visual -->
+        <div class="approach-visual-card reveal delay-1">
+          <div class="approach-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=85" 
+              alt="Immaculate Consultancy collaborative strategy workshop" 
+              loading="lazy"
+            >
+            <div class="approach-overlay-content">
+              <div class="approach-orbit-circle">
+                <span class="orbit-center-tag">IC</span>
+                <span class="orbit-chip chip-1">LISTEN</span>
+                <span class="orbit-chip chip-2">DIAGNOSE</span>
+                <span class="orbit-chip chip-3">PLAN</span>
+                <span class="orbit-chip chip-4">GROW</span>
+              </div>
+              <div class="approach-stat-card">
+                <span class="stat-big">100%</span>
+                <span class="stat-caption">Dedicated Partner Commitment</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="contact section-pad" id="contact"><div class="container contact-grid"><div><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> YOUR NEXT STEP STARTS HERE</p><h2>Let’s make things<br><em>clearer together.</em></h2><p class="contact-intro">Share what’s on your mind. We’d be glad to hear from you.</p></div><div class="contact-card"><span class="contact-card-label">GET IN TOUCH</span><a class="contact-method" href="tel:+2347088109367"><span class="contact-icon">☎</span><span><small>CALL US</small><strong>0708 810 9367</strong></span><span class="method-arrow">↗</span></a><a class="contact-method" href="tel:+2348106943942"><span class="contact-icon">☎</span><span><small>CALL US</small><strong>0810 694 3942</strong></span><span class="method-arrow">↗</span></a><a class="contact-method" href="mailto:abbeyance20@gmail.com"><span class="contact-icon">✉</span><span><small>EMAIL US</small><strong>abbeyance20@gmail.com</strong></span><span class="method-arrow">↗</span></a><p class="contact-note">A simple conversation is a great place to begin.</p></div></div></section>
+
+    <!-- IMPACT & CASE HIGHLIGHTS -->
+    <section class="section impact-section" id="impact">
+      <div class="container">
+        <div class="section-head-center">
+          <div class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>MEASURABLE OUTCOMES</span>
+            <span class="eyebrow-line"></span>
+          </div>
+          <h2 class="section-title">
+            Real challenges. Strategic rigor. <em class="serif-accent">Tangible impact.</em>
+          </h2>
+          <p class="section-subtitle">
+            Explore how our tailored interventions turn operational stagnation into decisive, scalable market momentum.
+          </p>
+        </div>
+
+        <div class="impact-grid">
+          <!-- Case 1 -->
+          <div class="impact-card reveal">
+            <div class="impact-media">
+              <img 
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" 
+                alt="Business turnaround and organizational restructuring" 
+                loading="lazy"
+              >
+              <div class="impact-tag">Operational Transformation</div>
+            </div>
+            <div class="impact-body">
+              <div class="impact-stats">
+                <div class="impact-stat">
+                  <span class="stat-value">+42%</span>
+                  <span class="stat-name">Efficiency Gain</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="stat-value">90 Days</span>
+                  <span class="stat-name">Turnaround Period</span>
+                </div>
+              </div>
+              <h3 class="impact-title">Restructuring a Growth-Stage Enterprise for Scale</h3>
+              <p class="impact-desc">
+                An expanding multi-branch enterprise was experiencing severe operational friction and blurred leadership accountability. Immaculate Consultancy conducted a full diagnostics sprint, streamlined cross-functional workflows, and established automated KPI tracking.
+              </p>
+              <div class="impact-takeaway">
+                <strong>Result:</strong> Reduced administrative overhead by 28% and unlocked capacity for rapid market expansion.
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="impact-card reveal delay-1">
+            <div class="impact-media">
+              <img 
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" 
+                alt="Executive leadership transition and strategic alignment" 
+                loading="lazy"
+              >
+              <div class="impact-tag">Executive Advisory</div>
+            </div>
+            <div class="impact-body">
+              <div class="impact-stats">
+                <div class="impact-stat">
+                  <span class="stat-value">100%</span>
+                  <span class="stat-name">Board Alignment</span>
+                </div>
+                <div class="impact-stat">
+                  <span class="stat-value">3.2x</span>
+                  <span class="stat-name">Strategic Pipeline</span>
+                </div>
+              </div>
+              <h3 class="impact-title">Guiding a C-Suite Transition &amp; Market Pivot</h3>
+              <p class="impact-desc">
+                A newly appointed executive needed an objective, confidential sounding board to navigate complex legacy board dynamics while charting a daring strategic pivot into high-margin advisory services.
+              </p>
+              <div class="impact-takeaway">
+                <strong>Result:</strong> Secured unanimous board ratification for the new 3-year roadmap and successfully launched 2 premier product lines.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-head-center">
+          <div class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>VOICES OF TRUST</span>
+            <span class="eyebrow-line"></span>
+          </div>
+          <h2 class="section-title">
+            Trusted by leaders who value <em class="serif-accent">clarity &amp; precision.</em>
+          </h2>
+          <p class="section-subtitle">
+            Read what founders, managing directors, and executives say about partnering with Immaculate Consultancy.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card reveal">
+            <div class="quote-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="quote-text">
+              &ldquo;Immaculate Consultancy transformed how our executive team approaches strategic risk. Their guidance was sharp, human, and directly responsible for unlocking our most profitable business quarter to date.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
+                alt="Oluwaseun A." 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-details">
+                <strong class="author-name">Oluwaseun A.</strong>
+                <span class="author-title">Managing Director, Capital Logistics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card reveal delay-1 highlight-card">
+            <div class="quote-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="quote-text">
+              &ldquo;In a season of intense crossroads, having Immaculate Consultancy as an advisory sounding board brought immediate clarity. Every recommendation was pragmatic, grounded in data, and completely actionable.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" 
+                alt="Dr. Babatunde E." 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-details">
+                <strong class="author-name">Dr. Babatunde E.</strong>
+                <span class="author-title">Founder &amp; Principal Partner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card reveal delay-2">
+            <div class="quote-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="quote-text">
+              &ldquo;The depth of personal attention and strategic rigor we received was remarkable. They don't just dump a slide deck and leave; they ensure your leadership team has the exact tools to execute flawlessly.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <img 
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80" 
+                alt="Kemi O." 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-details">
+                <strong class="author-name">Kemi O.</strong>
+                <span class="author-title">Head of Strategy &amp; People Operations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="faq-intro">
+          <div class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>FREQUENTLY ASKED QUESTIONS</span>
+          </div>
+          <h2 class="section-title">
+            Everything you need to know about <em class="serif-accent">working with us.</em>
+          </h2>
+          <p class="section-lead">
+            Have questions before starting? Here are straightforward answers about our engagement models, scheduling, and advisory process.
+          </p>
+          <div class="faq-cta-box">
+            <p>Still have a specific question?</p>
+            <a href="mailto:abbeyance20@gmail.com" class="faq-email-btn">Email us directly &rarr;</a>
+          </div>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- Q1 -->
+          <div class="faq-item active">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>What makes Immaculate Consultancy different from other advisory firms?</span>
+              <span class="faq-icon" aria-hidden="true">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Unlike generic consulting firms that deliver theoretical, cookie-cutter binders, Immaculate Consultancy specializes in human-centered, hyper-practical guidance. We tailor every single roadmap to your exact operational realities, resources, and timeline—ensuring that every decision is realistic and immediately executable.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Who are your typical clients?</span>
+              <span class="faq-icon" aria-hidden="true">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We serve ambitious business founders, executives, growing SMEs, and high-performing professionals navigating critical transitions. Whether you need corporate restructuring, strategic positioning, or individualized career advisory, our models adapt seamlessly to your scale.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Are consultations held virtually or in-person?</span>
+              <span class="faq-icon" aria-hidden="true">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We offer high-flexibility formats. Sessions can be conducted securely over encrypted video conferencing (Google Meet, Zoom) for our pan-African and international clients, or in-person for executive workshops and strategic intensives in Nigeria by prior arrangement.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How quickly can we begin an engagement?</span>
+              <span class="faq-icon" aria-hidden="true">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                After our initial exploratory call, we typically finalize your custom scope within 48 to 72 hours. We can initiate deep-dive discovery sprints within one week of agreement sign-off.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What are your contact lines and response times?</span>
+              <span class="faq-icon" aria-hidden="true">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                You can reach our advisory desk via phone at <strong>0708 810 9367</strong> and <strong>0810 694 3942</strong>, or via email at <strong>abbeyance20@gmail.com</strong>. We take pride in rapid responsiveness, replying to all email and form inquiries within 2 to 4 business hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CONSULTATION BOOKING HUB -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-outer">
+          <div class="contact-grid">
+            
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+              <div class="section-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span>INITIATE YOUR NEXT CHAPTER</span>
+              </div>
+              <h2 class="contact-heading">
+                Let's make things <em class="serif-accent">clearer together.</em>
+              </h2>
+              <p class="contact-lead">
+                Every breakthrough begins with an honest, thoughtful conversation. Tell us about your organization, goals, or the specific crossroads you are facing today.
+              </p>
+
+              <!-- Direct Contact Methods -->
+              <div class="contact-methods-list">
+                <a class="contact-box" href="tel:+2347088109367" aria-label="Call 0708 810 9367">
+                  <div class="contact-box-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="contact-box-text">
+                    <span class="box-label">PRIMARY ADVISORY LINE</span>
+                    <strong class="box-value">0708 810 9367</strong>
+                    <span class="box-action">Tap to call &rarr;</span>
+                  </div>
+                </a>
+
+                <a class="contact-box" href="tel:+2348106943942" aria-label="Call 0810 694 3942">
+                  <div class="contact-box-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="contact-box-text">
+                    <span class="box-label">DIRECT DESK &bull; SECONDARY</span>
+                    <strong class="box-value">0810 694 3942</strong>
+                    <span class="box-action">Tap to call &rarr;</span>
+                  </div>
+                </a>
+
+                <a class="contact-box" href="mailto:abbeyance20@gmail.com" aria-label="Email abbeyance20@gmail.com">
+                  <div class="contact-box-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="contact-box-text">
+                    <span class="box-label">OFFICIAL INQUIRY EMAIL</span>
+                    <strong class="box-value">abbeyance20@gmail.com</strong>
+                    <span class="box-action">Click to send email &rarr;</span>
+                  </div>
+                </a>
+
+                <a class="contact-box whatsapp-box" href="https://wa.me/2347088109367?text=Hello%20Immaculate%20Consultancy%2C%20I%20would%20like%20to%20inquire%20about%20your%20consultancy%20services." target="_blank" rel="noopener noreferrer">
+                  <div class="contact-box-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  </div>
+                  <div class="contact-box-text">
+                    <span class="box-label">INSTANT MESSAGING</span>
+                    <strong class="box-value">WhatsApp Advisory Desk</strong>
+                    <span class="box-action">Open chat directly &rarr;</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="contact-location-note">
+                <span class="note-pulse"></span>
+                <span>Serving clients nationwide across Nigeria &bull; Worldwide remote sessions</span>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="contact-form-panel">
+              <div class="form-header">
+                <h3>Request an Exploratory Consultation</h3>
+                <p>Fill out the form below. We will analyze your query and reach out promptly.</p>
+              </div>
+
+              <form id="consultationForm" class="consult-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fullName">Your Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Oluwaseun Adeleke" required>
+                    <span class="error-hint" id="nameError">Please enter your name.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="emailAddr">Email Address <span class="required">*</span></label>
+                    <input type="email" id="emailAddr" name="emailAddr" placeholder="e.g. name@company.com" required>
+                    <span class="error-hint" id="emailError">Please enter a valid email address.</span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phoneNum">Phone Number / WhatsApp <span class="required">*</span></label>
+                    <input type="tel" id="phoneNum" name="phoneNum" placeholder="e.g. 0801 234 5678" required>
+                    <span class="error-hint" id="phoneError">Please enter your phone number.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="serviceSelect">Practice Area of Interest</label>
+                    <select id="serviceSelect" name="serviceSelect">
+                      <option value="Strategic Business Advisory">Strategic Business Advisory</option>
+                      <option value="Executive & Leadership Direction">Executive &amp; Leadership Direction</option>
+                      <option value="Personal & Career Clarity">Personal &amp; Career Clarity</option>
+                      <option value="Operational Excellence & Scaling">Operational Excellence &amp; Scaling</option>
+                      <option value="Opportunity & Feasibility Diligence">Opportunity &amp; Feasibility Diligence</option>
+                      <option value="Ongoing Retainer Partnership">Ongoing Retainer Partnership</option>
+                      <option value="General Strategic Inquiry">General Strategic Inquiry</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="orgName">Organization / Current Role (Optional)</label>
+                  <input type="text" id="orgName" name="orgName" placeholder="e.g. Managing Partner at Tech Ventures">
+                </div>
+
+                <div class="form-group">
+                  <label for="messageText">Tell Us About Your Goals or Challenge <span class="required">*</span></label>
+                  <textarea id="messageText" name="messageText" rows="4" placeholder="Briefly describe what you're working on, your timeline, or the decisions ahead..." required></textarea>
+                  <span class="error-hint" id="msgError">Please share a brief note about what you need.</span>
+                </div>
+
+                <button type="submit" class="btn btn-gold btn-full" id="submitBtn">
+                  <span>Submit Consultation Request</span>
+                  <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                </button>
+
+                <!-- Feedback status message -->
+                <div class="form-status-alert" id="formStatus" role="alert" style="display:none;"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
-  <footer class="footer"><div class="container footer-inner"><a class="brand brand-footer" href="#home"><span class="brand-mark">I<span>.</span></span><span class="brand-name">IMMACULATE <small>CONSULTANCY</small></span></a><span>Clear guidance. Confident next steps.</span><span>© <span id="year"></span> Immaculate Consultancy</span><a href="#home" class="back-top">BACK TO TOP ↑</a></div></footer>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand-col">
+        <a class="brand brand-footer" href="#home" aria-label="Immaculate Consultancy Home">
+          <div class="brand-symbol">
+            <span class="symbol-letter">I</span>
+            <span class="symbol-accent">.</span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">IMMACULATE</span>
+            <span class="brand-sub">CONSULTANCY &bull; ADVISORY</span>
+          </div>
+        </a>
+        <p class="footer-tagline">
+          Thoughtful guidance and practical support. Helping ambitious leaders, founders, and professionals move forward with absolute clarity and purpose.
+        </p>
+        <div class="footer-contacts">
+          <a href="tel:+2347088109367" class="footer-contact-link">&phone; 0708 810 9367</a>
+          <a href="tel:+2348106943942" class="footer-contact-link">&phone; 0810 694 3942</a>
+          <a href="mailto:abbeyance20@gmail.com" class="footer-contact-link">&#9993; abbeyance20@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <span class="footer-col-title">Navigation</span>
+        <ul class="footer-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Our Firm</a></li>
+          <li><a href="#services">Practice Areas</a></li>
+          <li><a href="#approach">Our Methodology</a></li>
+          <li><a href="#impact">Client Impact</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#contact">Contact Advisory Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <span class="footer-col-title">Practice Areas</span>
+        <ul class="footer-menu">
+          <li><a href="#services">Strategic Business Advisory</a></li>
+          <li><a href="#services">Executive &amp; Leadership Direction</a></li>
+          <li><a href="#services">Personal &amp; Career Clarity</a></li>
+          <li><a href="#services">Operational Excellence &amp; Scaling</a></li>
+          <li><a href="#services">Opportunity &amp; Feasibility Diligence</a></li>
+          <li><a href="#services">Ongoing Retainer Partnership</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-trust-col">
+        <span class="footer-col-title">Commitment to Discretion</span>
+        <p class="footer-discretion-text">
+          All strategic engagements, inquiries, and client conversations are conducted under strict non-disclosure and professional ethical confidentiality.
+        </p>
+        <div class="footer-operating-hours">
+          <span class="hours-dot"></span>
+          <span>Advisory Desk: Monday &ndash; Saturday &bull; 8:00 AM &ndash; 6:00 PM WAT</span>
+        </div>
+        <a href="#contact" class="btn btn-outline btn-sm footer-book-btn">Schedule Initial Call &rarr;</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-bottom-inner">
+        <p class="copyright">&copy; <span id="currentYear"></span> Immaculate Consultancy. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <span>Clarity</span> &bull; 
+          <span>Care</span> &bull; 
+          <span>Confidence</span>
+        </div>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
-
