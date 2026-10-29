@@ -251,6 +251,8 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   height: 86px;
+  width: min(1380px, calc(100% - 48px));
+  margin: 0 auto;
   transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -286,7 +288,7 @@ button, input, select, textarea {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 20px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -301,7 +303,7 @@ button, input, select, textarea {
 
 .nav-item {
   font-family: var(--font-sans);
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -313,6 +315,7 @@ button, input, select, textarea {
   position: relative;
   transition: color 0.25s ease;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-item::after {
@@ -708,8 +711,6 @@ button, input, select, textarea {
   gap: 8px;
   margin-top: 12px;
 }
-  line-height: 1.6;
-}
 
 /* --------------------------------------------------------------------------
    SECTION 1: HERO SLIDER (Exact LawSight Full-Screen 3-Slide Carousel)
@@ -958,8 +959,8 @@ button, input, select, textarea {
    -------------------------------------------------------------------------- */
 .overlap-box-wrapper {
   position: relative;
-  z-index: 10;
-  margin-top: -65px;
+  z-index: 25;
+  margin-top: -85px;
 }
 
 .overlap-box-grid {
@@ -1109,7 +1110,7 @@ button, input, select, textarea {
    -------------------------------------------------------------------------- */
 .about-section {
   background-color: #ffffff;
-  padding-top: 110px;
+  padding-top: 150px;
 }
 
 .about-grid {
@@ -1312,8 +1313,21 @@ button, input, select, textarea {
 }
 
 .service-icon {
-  font-size: 26px;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background: rgba(213, 170, 109, 0.12);
   color: var(--primary-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background: var(--primary-gold);
+  color: #0e1726;
+  transform: translateY(-2px);
 }
 
 .service-idx {
@@ -1336,6 +1350,7 @@ button, input, select, textarea {
   line-height: 1.65;
   color: var(--text-body);
   margin-bottom: 22px;
+  flex-grow: 1;
 }
 
 .service-link {
@@ -1430,6 +1445,8 @@ button, input, select, textarea {
   border: 1px solid var(--border-light);
   overflow: hidden;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .team-card:hover {
@@ -1486,8 +1503,11 @@ button, input, select, textarea {
 }
 
 .team-details {
-  padding: 22px 20px;
+  padding: 24px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .team-name {
@@ -1503,13 +1523,15 @@ button, input, select, textarea {
   font-size: 12.5px;
   color: var(--primary-gold);
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .team-contact-link {
   font-size: 12px;
   font-weight: 700;
   color: var(--text-muted);
+  margin-top: auto;
+  padding-top: 8px;
 }
 
 .team-contact-link:hover {
@@ -1752,10 +1774,23 @@ button, input, select, textarea {
 }
 
 .c-detail-icon {
-  font-size: 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(213, 170, 109, 0.12);
+  border: 1px solid rgba(213, 170, 109, 0.25);
   color: var(--primary-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  margin-top: 2px;
+  transition: all 0.25s ease;
+}
+
+.c-detail-item:hover .c-detail-icon {
+  background: var(--primary-gold);
+  color: #0e1726;
+  transform: scale(1.05);
 }
 
 .c-detail-text {
